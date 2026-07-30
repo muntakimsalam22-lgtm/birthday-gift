@@ -1,0 +1,42 @@
+body{
+margin:0;
+background:#0d0d0d;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+overflow:hidden;
+font-family:Arial;
+}
+
+#giftBox{
+font-size:120px;
+text-align:center;
+color:white;
+cursor:pointer;
+animation:float 2s infinite ease-in-out;
+}
+
+#giftBox p{
+font-size:24px;
+color:gold;
+margin-top:15px;
+}
+
+#letter img{
+width:90%;
+max-width:450px;
+border-radius:15px;
+box-shadow:0 0 30px gold;
+animation:zoom .8s;
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-15px);}
+}
+
+@keyframes zoom{
+from{transform:scale(.3);}
+to{transform:scale(1);}
+}
