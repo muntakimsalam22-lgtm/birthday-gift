@@ -1,0 +1,13 @@
+let gift=document.getElementById("giftBox");
+let letter=document.getElementById("letter");
+
+gift.onclick=function(){
+
+gift.style.display="none";
+letter.style.display="block";
+
+if(navigator.vibrate){
+navigator.vibrate(200);
+}
+
+}
